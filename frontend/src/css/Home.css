@@ -21,6 +21,9 @@ table {
 }
 
 @media (max-width: 639px) {
+  .info-grid {
+    grid-template-columns: 1fr; /* ← Switch to single column on mobile */
+  }
   .home {
     padding: 1rem 0;
   }

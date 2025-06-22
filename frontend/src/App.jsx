@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Policies from "./pages/Policies";
 import Roleplayers from "./pages/Roleplayers";
 import Timeline from "./pages/Timeline";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import TimelineByYear from "./components/TimelineByYear";
 
@@ -13,13 +13,15 @@ function App() {
     <>
       <NavBar />
       <main className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/policies" element={<Policies />} />
-          <Route path="/roleplayers" element={<Roleplayers />} />
-          <Route path="/timeline" element={<Timeline />} />
-          <Route path="/timeline/:year" element={<TimelineByYear />} />
-        </Routes>
+        <Router basename="/test-demo">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/policies" element={<Policies />} />
+            <Route path="/roleplayers" element={<Roleplayers />} />
+            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/timeline/:year" element={<TimelineByYear />} />
+          </Routes>
+        </Router>
       </main>
     </>
   );
