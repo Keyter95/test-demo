@@ -11,9 +11,9 @@ import TimelineByYear from "./components/TimelineByYear";
 function App() {
   return (
     <>
-      <main className="main-content">
-        <NavBar />
-        <Router basename="/test-demo">
+      <Router basename="/test-demo">
+        <main className="main-content">
+          <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/policies" element={<Policies />} />
@@ -21,8 +21,8 @@ function App() {
             <Route path="/timeline" element={<Timeline />} />
             <Route path="/timeline/:year" element={<TimelineByYear />} />
           </Routes>
-        </Router>
-      </main>
+        </main>
+      </Router>
     </>
   );
 }
