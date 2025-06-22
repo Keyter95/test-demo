@@ -1,0 +1,31 @@
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 30px;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+table {
+  color: #000000;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+}
+
+@media (max-width: 639px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,54 @@
+.info-tile {
+  position: relative;
+  border-radius: 8px;
+  overflow-y: auto; /*As die blokkies simmetries moet wees maak hierdie weer hidden*/
+  background-color: #808080;
+  transition: transform 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  gap: 10px;
+  opacity: 0.75;
+  color: #000000;
+}
+
+.row {
+  display: flex;
+  flex-direction: column; /* each row has 2 columns */
+  gap: 50px;
+  min-height: 550px; /*As die blokkies simmetries moet wees maak hierdie weer 100%*/
+  width: 65%;
+  margin: auto;
+}
+
+.info-tile:hover {
+  transform: translateY(-5px);
+}
+
+.info {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-heading {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.info-tile p {
+  color: #000000;
+  font-size: 0.9rem;
+}
+.info-tile table {
+  margin: 0 auto;
+}
+
+.theading {
+  font-weight: bold;
+}
