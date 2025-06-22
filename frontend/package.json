@@ -1,12 +1,13 @@
 {
+  "homepage": "http://keyter95.github.io/test-demo",
   "name": "frontend",
   "private": true,
-  "homepage": "https://keyter95.github.io/test-demo",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "vite build",
-    "deploy": "gh-pages -d dist",
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
