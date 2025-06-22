@@ -11,18 +11,16 @@ import TimelineByYear from "./components/TimelineByYear";
 function App() {
   return (
     <>
-      <Router basename="/test-demo">
-        <main className="main-content">
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/policies" element={<Policies />} />
-            <Route path="/roleplayers" element={<Roleplayers />} />
-            <Route path="/timeline" element={<Timeline />} />
-            <Route path="/timeline/:year" element={<TimelineByYear />} />
-          </Routes>
-        </main>
-      </Router>
+      <main className="main-content">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/policies" element={<Policies />} />
+          <Route path="/roleplayers" element={<Roleplayers />} />
+          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/timeline/:year" element={<TimelineByYear />} />
+        </Routes>
+      </main>
     </>
   );
 }
