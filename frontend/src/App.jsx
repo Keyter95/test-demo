@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Policies from "./pages/Policies";
 import Roleplayers from "./pages/Roleplayers";
 import Timeline from "./pages/Timeline";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import TimelineByYear from "./components/TimelineByYear";
 
